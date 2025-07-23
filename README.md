@@ -47,22 +47,7 @@ GRANT ALL PRIVILEGES ON DATABASE shipflow_db TO postgres;
 
 ---
 
-### 2️⃣ Configuración `application.properties`
-
-En `src/main/resources/application.properties`:
-
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/shipflow_db
-spring.datasource.username=postgres
-spring.datasource.password=1234
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-server.port=8080
-```
-
----
-
-### 3️⃣ Ejecutar la aplicación
+### 2 Ejecutar la aplicación
 
 ```bash
 ./gradlew bootRun
